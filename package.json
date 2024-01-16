@@ -1,0 +1,27 @@
+{
+  "name": "avia-sales",
+  "scripts": {
+    "serve": "webpack serve --open --mode development",
+    "build": "webpack --mode production --env prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esm322/avia-layout.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esm322/avia-layout/issues"
+  },
+  "homepage": "https://github.com/Esm322/avia-layout#readme",
+  "devDependencies": {
+    "css-loader": "^6.9.0",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "filemanager-webpack-plugin": "^8.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

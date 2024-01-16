@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-Regular'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/OpenSansRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-SemiBold'),
+  url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/OpenSansSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'OpenSans', sans-serif;
+  background-color: #F3F7FA;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4A4A4A;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: url('../img/Cursor.svg'), auto;
+}
+
+.container {
+  max-width: 754px;
+  margin: 0 auto;
+}
+
+.form__block {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.header__logo {
+  width: 60px;
+  height: 60px;
+  cursor: url('../img/Cursor.svg'), auto;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+/*  */
+
+.content {
+ display: flex;
+}
+
+.content__filter {
+  margin-right: 20px;
+  padding: 20px 0;
+  width: 232px;
+  height: 252px;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.form__legend {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-list__item {
+  padding: 10px 20px;
+  cursor: url('../img/Cursor.svg'), auto;
+  transition: background-color .4s ease-in-out;
+}
+
+.check-list__item:hover {
+  background-color: #F1FCFF;
+}
+
+.check-list__label {
+  cursor: url('../img/Cursor.svg'), auto;
+}
+
+.check-list__check {
+  display: none;
+}
+
+.check-list__custom {
+  position: relative;
+  padding-left: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.check-list__custom::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/Checkbox.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.check-list__custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.check-list__check:checked + .check-list__custom::after {
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/Checkbox-active.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  opacity: 1;
+}
+
+/*  */
+
+.content__list {
+  width: 502px;
+}
+
+.radio-list {
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #fff;
+}
+
+.radio-list__label {
+  display: block;
+  position: relative;
+  width: calc(100% / 3);
+  padding: 15px;
+  border: 1px solid #DFE5EC;
+  cursor: url('../img/Cursor.svg'), auto;
+  transition: all .3s ease-in-out;
+}
+
+.radio-list__label:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.radio-list__label:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+.radio-list__label:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.radio-list__radio {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.radio-list__custom::before {
+  content: '';
+  position: absolute;
+}
+
+.radio-list__label:hover .radio-list__custom::before, .radio-list__label:active .radio-list__custom::before, .radio-list__radio:checked + .radio-list__custom::before {
+  outline: 1px solid #2196F3;
+  background-color: #2196F3;
+  color: #fff;
+}

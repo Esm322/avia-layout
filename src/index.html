@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="display: none;">Avia</h1>
+
+  <header class="header container">
+    <a href="#" class="header__logo">
+      <img src="img/Logo.svg" alt="Логотип" class="logo">
+    </a>
+  </header>
+
+  <main class="content container">
+    <div class="content__filter">
+      <aside class="filter">
+        <form action="#" class="form filter__form" method="get">
+          <fieldset class="form__block">
+            <legend class="form__legend">
+              Количество пересадок
+            </legend>
+            <ul class="check-list">
+              <li class="check-list__item">
+                <label class="check-list__label">
+                  <input type="checkbox" class="check-list__check" name="transfer" value="все">
+                  <span class="check-list__custom">
+                    Все
+                  </span>
+                </label>
+              </li>
+              <li class="check-list__item">
+                <label class="check-list__label">
+                  <input type="checkbox" class="check-list__check sr-only" name="transfer" value="без пересадок">
+                  <span class="check-list__custom">
+                    Без пересадок
+                  </span>
+                </label>
+              </li>
+              <li class="check-list__item">
+                <label class="check-list__label">
+                  <input type="checkbox" class="check-list__check sr-only" name="transfer" value="1 пересадка">
+                  <span class="check-list__custom">
+                    1 пересадка
+                  </span>
+                </label>
+              </li>
+              <li class="check-list__item">
+                <label class="check-list__label">
+                  <input type="checkbox" class="check-list__check sr-only" name="transfer" value="2 пересадки">
+                  <span class="check-list__custom">
+                    2 пересадки
+                  </span>
+                </label>
+              </li>
+              <li class="check-list__item">
+                <label class="check-list__label">
+                  <input type="checkbox" class="check-list__check sr-only" name="transfer" value="3 пересадки">
+                  <span class="check-list__custom">
+                    3 пересадки
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </aside>
+    </div>
+
+    <div class="content__list">
+      <div class="radio-list">
+        <label class="radio-list__label">
+          <input type="radio" class="radio-list__radio" name="price" value="Самый дешевый">
+          <span class="radio-list__custom">
+            Самый дешевый
+          </span>
+        </label>
+        <label class="radio-list__label">
+          <input type="radio" class="radio-list__radio" name="price" value="Самый быстрый">
+          <span class="radio-list__custom">
+            Самый быстрый
+          </span>
+        </label>
+        <label class="radio-list__label">
+          <input type="radio" class="radio-list__radio" name="price" value="Оптимальный">
+          <span class="radio-list__custom">
+            Оптимальный
+          </span>
+        </label>
+      </div>
+
+      <ul class="tickets-list">
+        <li class="tickets-list__item ticket">
+          <span class="ticket__price">
+            13 400 Р
+          </span>
+
+          <div class="ticket__pic">
+            <img src="img/S7Logo.jpg" alt="#">
+          </div>
+
+          <span class="ticket__something-time">
+            MOW – HKT
+          </span>
+          <p class="ticket__something-time-text">
+            10:45 – 08:00
+          </p>
+
+          <span class="ticket__time-spending">
+            В пути
+          </span>
+          <p class="ticket__time-spending-text">
+            21ч 15м
+          </p>
+
+          <span class="ticket__transfers">
+            2 пересадки
+          </span>
+          <p class="ticket__transfers-text">
+            HKG, JNB
+          </p>
+
+          <span class="ticket__something-time under">
+            MOW – HKT
+          </span>
+          <p class="ticket__something-time-text under">
+            11:20 – 00:50
+          </p>
+
+          <span class="ticket__time-spending under">
+            В пути
+          </span>
+          <p class="ticket__time-spending-text under">
+            13ч 30м
+          </p>
+
+          <span class="ticket__transfers under">
+            1 пересадка
+          </span>
+          <p class="ticket__transfers-text under">
+            HKG
+          </p>
+        </li>
+
+        <li class="tickets-list__item ticket">
+          <span class="ticket__price">
+
+          </span>
+
+          <div class="ticket__pic">
+            <img src="" alt="#">
+          </div>
+
+          <span class="ticket__something-time"></span>
+          <p class="ticket__something-time-text"></p>
+
+          <span class="ticket__time-spending"></span>
+          <p class="ticket__time-spending-text"></p>
+
+          <span class="ticket__transfers"></span>
+          <p class="ticket__transfers-text"></p>
+
+          <span class="ticket__something-time under"></span>
+          <p class="ticket__something-time-text under"></p>
+
+          <span class="ticket__time-spending under"></span>
+          <p class="ticket__time-spending-text under"></p>
+
+          <span class="ticket__transfers under"></span>
+          <p class="ticket__transfers-text under"></p>
+
+        </li>
+
+        <li class="tickets-list__item ticket">
+          <span class="ticket__price">
+
+          </span>
+
+          <div class="ticket__pic">
+            <img src="" alt="#">
+          </div>
+
+          <span class="ticket__something-time"></span>
+          <p class="ticket__something-time-text"></p>
+
+          <span class="ticket__time-spending"></span>
+          <p class="ticket__time-spending-text"></p>
+
+          <span class="ticket__transfers"></span>
+          <p class="ticket__transfers-text"></p>
+
+          <span class="ticket__something-time under"></span>
+          <p class="ticket__something-time-text under"></p>
+
+          <span class="ticket__time-spending under"></span>
+          <p class="ticket__time-spending-text under"></p>
+
+          <span class="ticket__transfers under"></span>
+          <p class="ticket__transfers-text under"></p>
+        </li>
+      </ul>
+
+      <button class="btn-more">
+        Показать еще 5 билетов!
+      </button>
+    </div>
+  </main>
+</body>
+</html>
