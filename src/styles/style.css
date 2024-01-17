@@ -189,10 +189,10 @@ button {
   margin-bottom: 20px;
   display: flex;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .radio-list__label {
-  display: block;
   position: relative;
   width: calc(100% / 3);
   padding: 15px;
@@ -223,13 +223,61 @@ button {
   width: 0;
 }
 
+.radio-list__custom {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .radio-list__custom::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
 }
 
-.radio-list__label:hover .radio-list__custom::before, .radio-list__label:active .radio-list__custom::before, .radio-list__radio:checked + .radio-list__custom::before {
+.radio-list__label:first-child .radio-list__custom::before {
+  content: 'Самый дешевый';
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.radio-list__label:nth-child(2) .radio-list__custom::before {
+  content: 'Самый быстрый';
+  border-radius: 0;
+}
+
+.radio-list__label:last-child .radio-list__custom::before {
+  content: 'Оптимальный';
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.radio-list__label:hover .radio-list__custom::before, .radio-list__radio:checked + .radio-list__custom::before {
   outline: 1px solid #2196F3;
   background-color: #2196F3;
   color: #fff;
+  opacity: 1;
+}
+
+/*  */
+
+.tickets-list {
+  width: 502px;
 }
