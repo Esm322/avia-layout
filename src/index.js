@@ -3,6 +3,8 @@ import normalize from './styles/normalize.css';
 import logo from './img/Logo.svg';
 import cursor from './img/Cursor.svg';
 import logoS7 from './img/S7Logo.jpg';
+import logo2S7 from './img/S7Logo.png';
 import check from './img/Checkbox.svg';
+import s7 from './img/s7.png';
 import checkAct from './img/Checkbox-active.svg';
 import checkHover from './img/Checkbox-hover.svg';

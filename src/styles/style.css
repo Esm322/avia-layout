@@ -48,6 +48,10 @@ img {
   object-fit: contain;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -114,6 +118,7 @@ button {
   line-height: 12px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  user-select: none;
 }
 
 .check-list {
@@ -122,7 +127,6 @@ button {
 }
 
 .check-list__item {
-  padding: 10px 20px;
   cursor: url('../img/Cursor.svg'), auto;
   transition: background-color .4s ease-in-out;
 }
@@ -132,6 +136,9 @@ button {
 }
 
 .check-list__label {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
   cursor: url('../img/Cursor.svg'), auto;
 }
 
@@ -182,6 +189,9 @@ button {
 /*  */
 
 .content__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
   width: 502px;
 }
 
@@ -224,7 +234,6 @@ button {
 }
 
 .radio-list__custom {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   font-size: 12px;
@@ -279,5 +288,79 @@ button {
 /*  */
 
 .tickets-list {
+  margin-bottom: 20px;
   width: 502px;
+}
+
+.tickets-list__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 184px;
+  padding: 20px;
+  border: 1px solid #DFE5EC;
+  border-radius: 5px;
+  background-color: #fff;
+  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.10));
+}
+
+.tickets-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ticket__pic {
+  background-image: url('../img/S7Logo.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ticket__price {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #2196F3;
+  user-select: none;
+}
+
+.span-text {
+  align-self: end;
+  color: #A0B0B9;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.p-text {
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  user-select: none;
+}
+
+.ticket__img {
+  width: 110px;
+  height: 36px;
+  grid-column: 3/3;
+  justify-self: end;
+}
+
+.btn-more {
+  padding: 15px 20px;
+  background-color: #2196F3;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn-more:hover {
+  background-color: #5ab0f6;
 }
